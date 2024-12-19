@@ -8,7 +8,6 @@
 #include "Legacy2Aidl.h"
 #include "Session.h"
 #include "VendorConstants.h"
-#include "UdfpsHandler.h"
 
 #include <fingerprint.sysprop.h>
 

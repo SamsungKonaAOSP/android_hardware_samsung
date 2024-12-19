@@ -14,7 +14,6 @@ cc_binary {
         "Fingerprint.cpp",
         "LegacyHAL.cpp",
         "LockoutTracker.cpp",
-        "UdfpsHandler.cpp",
         "Session.cpp",
         "service.cpp",
     ],
@@ -27,7 +26,12 @@ cc_binary {
         "android.hardware.biometrics.common.util",
     ],
     static_libs: ["libandroid.hardware.biometrics.fingerprint.SamsungProps"],
+    static_libs: [
+        "libandroid.hardware.biometrics.fingerprint.SamsungProps",
+        "libudfpshandler.samsung",
+    ],
     vendor: true,
+    header_libs: ["samsungfingerprint_headers"],
 }
 
 sysprop_library {
