@@ -31,7 +31,6 @@ cc_binary {
         "libudfpshandler.samsung",
     ],
     vendor: true,
-    header_libs: ["samsungfingerprint_headers"],
 }
 
 sysprop_library {
